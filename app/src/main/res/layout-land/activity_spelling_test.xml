@@ -1,0 +1,107 @@
+<!--
+activity_spelling_test.xml
+10/03/2015
+@author Conor Donnelly
+x13734595
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SpellingTest"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="show"
+            android:id="@+id/showBox"
+            android:checked="true"
+            android:layout_weight="1.03"
+            android:onClick="showBox"
+            android:clickable="true" />
+
+        <CheckBox
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:text="hide"
+            android:id="@+id/hideBox"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:onClick="hideBox"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp">
+
+        <TextView
+            android:layout_width="266dp"
+            android:layout_height="61dp"
+            android:id="@+id/spellingView"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/card"
+            android:text="Onomatopoeia"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memorize the spelling, when you are ready, click hide and type the spelling into the text field."
+            android:id="@+id/instructionsView"
+            android:textColor="#ff000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/enterSpellingTf"
+        android:background="#ffffffff"
+        android:autoText="true"
+        android:inputType="textNoSuggestions" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Spelling"
+        android:id="@+id/enterBtn"
+        android:layout_gravity="center_horizontal"
+        android:onClick="EnterBtn" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:weightSum="1"
+        android:layout_weight="0.60"
+        android:gravity="center_vertical|center_horizontal|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SPELLING TEST"
+            android:id="@+id/headerTv"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffff0002" />
+    </LinearLayout>
+
+</LinearLayout>

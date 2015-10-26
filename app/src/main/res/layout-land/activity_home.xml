@@ -1,0 +1,110 @@
+<!--
+    * activity_home.xml
+    *
+    * Version 1
+    *
+    * 18/02/15
+    *
+    * @author Conor Keenan, x13343806
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.micocards.cclj.micocards.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/app_logo"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/muteBtn"
+            android:onClick="onMuteBtnClick"
+            android:layout_gravity="bottom"
+            android:src="@drawable/on"
+            android:layout_weight="0"
+            android:background="#00d0e6e6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/flashCardBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:text="Flash Cards"
+            android:textColor="#ffcfcfcf"
+            android:textSize="25sp"
+            android:onClick="onFlashCardClick" />
+
+        <Button
+            android:id="@+id/triviaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:onClick="onTriviaClick"
+            android:text="Triva"
+            android:textColor="#ffcfcfcf"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/spellingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:text="Spelling Test"
+            android:textColor="#ffcfcfcf"
+            android:textSize="25sp"
+            android:onClick="onSpellingTestClick" />
+
+        <Button
+            android:id="@+id/achievBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:text="Achievements"
+            android:textColor="#ffcfcfcf"
+            android:textSize="25sp"
+            android:onClick="onAchievementsClick" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

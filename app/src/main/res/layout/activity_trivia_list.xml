@@ -1,0 +1,38 @@
+<!--
+    * activity_trivia_list.xml
+    *
+    * Version 1
+    *
+    * 18/02/15
+    *
+    * @author Conor Keenan, x13343806
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.micocards.cclj.micocards.TriviaList">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:text="Questions"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/tqList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

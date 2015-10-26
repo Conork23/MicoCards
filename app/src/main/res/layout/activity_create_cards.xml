@@ -1,0 +1,85 @@
+<!--
+    * activity_create_cards.java
+    *
+    * 10/03/2015
+    *
+    * @author Lee Redmond x13488632
+    *
+    * -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.micocards.cclj.micocards.CreateCards">
+
+    <LinearLayout
+        android:id="@+id/FrontLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/FlashCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Flash Card"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/FrontEnter"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:hint="Enter Text..."
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BackLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BackCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Back of Card"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/BackEnter"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:hint="Enter Optional Text..."
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/CreateButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_button"
+            android:onClick="onCreateCard"
+            android:text="Create Card"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<!--
+    * activity_view_cards.java
+    *
+    * 10/03/2015
+    *
+    * @author Lee Redmond x13488632
+    *
+    * -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.micocards.cclj.micocards.ViewCards">
+
+    <LinearLayout
+        android:id="@+id/FrontLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.00"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/FrontText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Flash Card"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/DisplayFront"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/QuestionText"
+            android:gravity="center"
+            android:hint="Click the ' + ' to add a Flash Card."
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BackLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.00"
+        android:background="@drawable/card"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DisplayQ"
+            android:gravity="center"
+            android:text="Back Of Card"
+            android:textSize="30dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/DisplayBack"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="Click the ' + ' to add a Flash Card."
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/PreviousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DisplayA"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:onClick="PrevClick"
+            android:text="Previous"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/Flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DisplayA"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:onClick="FlipClick"
+            android:text="Flip"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DisplayA"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:onClick="NextClick"
+            android:text="Next"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>
